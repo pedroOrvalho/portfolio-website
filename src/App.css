@@ -1,38 +1,164 @@
-.App {
+/* ----------------------------------- CANVAS ----------------------------------- */
+
+#canvasHome {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ----------------------------------- NAVBAR ----------------------------------- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin: 1vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+  font-family: "Syncopate", sans-serif;
+  color: #464646;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 900;
+}
+
+.navbar a {
+  z-index: 1000;
+  text-decoration: none;
+  color: #464646;
+}
+
+/* ----------------------------------- HOME ----------------------------------- */
+
+.home_container {
+  overflow: hidden;
+  background-color: rgba(245, 245, 220, 0.757);
+}
+
+/* ----------------------------------- ABOUT ----------------------------------- */
+
+.motion_about_container {
+  display: flex;
+  margin-top: 12vw;
+  padding: 0 5vw;
+  overflow-y: 100%;
+  padding-bottom: 6vw;
+}
+
+.aboutInfo_container {
+  width: 50vw;
+}
+
+.aboutInfo_h1 {
+  width: 50vw;
+  padding: 1vw 0;
+  margin: 0;
+  font-size: 7vw;
+}
+
+.aboutInfo_h4 {
+  margin: 0;
+  font-size: 3vw;
+  padding: 0.5vw 10vw;
+  text-align: end;
+}
+
+.aboutInfo_h2_container {
+  padding: 0 6vw;
+}
+
+.aboutInfo_h2 {
+  margin: 0;
+  font-size: 6vw;
+  text-align: start;
+  line-height: 4vw;
+}
+.aboutInfo_h2_lastName {
+  margin: 0;
+  font-size: 6vw;
+  text-align: end;
+  line-height: 4vw;
+}
+
+.aboutInfo_h3 {
+  width: 50vw;
+  margin: 0;
+  font-size: 3.5vw;
+  padding: 3vw 4vw;
+}
+
+.aboutText_container {
+  width: 50vw;
+  font-size: 2vw;
+  line-height: 3vw;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 6vw;
+}
+
+.aboutText_animation {
+  display: inline-block;
+}
+
+/* ----------------------------------- Tech Stack ----------------------------------- */
+
+.stack_container {
+  padding: 5vw 3vw;
+}
+
+.stack-list {
+  display: flex;
+}
+
+.main-stack {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-stack h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-stack-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-stack-content-1,
+.main-stack-content-2 {
+  width: 25vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-stack-content-1 p,
+.main-stack-content-2 p {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondary-stack {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondary-stack-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondary-stack-content p {
+  text-align: center;
+}
+
+.secondary-stack h2 {
+  text-align: center;
 }
